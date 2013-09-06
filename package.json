@@ -1,0 +1,38 @@
+{
+  "name": "josi-speech",
+  "description": "Natural language is a crucial part of the value and adoption of your JoSi by your team. Manage her standard responses, diction, and language here.",
+  "version": "1.0.0",
+  "author": "Tom Bell <tomb@tomb.io>",
+  "license": "MIT",
+
+  "keywords": [
+    "hubot",
+    "hubot-scripts"
+  ],
+
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jollyscience/josi-speech.git"
+  },
+
+  "bugs": {
+    "url": "https://github.com/jollyscience/josi-speech/issues"
+  },
+
+  "dependencies": {
+    "coffee-script": "~1.6"
+  },
+
+  "devDependencies": {
+    "mocha": "*",
+    "chai": "*",
+    "sinon-chai": "*",
+    "sinon": "*"
+  },
+
+  "main": "index.coffee",
+
+  "scripts": {
+    "test": "script/test"
+  }
+}
