@@ -1,8 +1,8 @@
 {
   "name": "josi-speech",
   "description": "Natural language is a crucial part of the value and adoption of your JoSi by your team. Manage her standard responses, diction, and language here.",
-  "version": "1.0.0",
-  "author": "Tom Bell <tomb@tomb.io>",
+  "version": "0.0.2",
+  "author": "Jolly Science",
   "license": "MIT",
   "keywords": [
     "hubot",
