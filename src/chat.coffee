@@ -13,6 +13,7 @@
 # Author:
 #   GantMan
 
+<<<<<<< HEAD
 reactions = [
     "Hm...",
     "...",
@@ -25,6 +26,10 @@ reactions = [
 module.exports = (robot) ->
   robot.respond /chat/i, (msg) ->
     msg.send msg.random reactions
+=======
+module.exports = (robot) ->
+  robot.respond /chat/i, (msg) ->
+>>>>>>> cdf890acd890da4fb3734c0285f4e10c397ab05f
     robot.http("http://chatoms.com/chatom.json?Normal=1&Fun=2&Philosophy=3&Out+There=4&Love=5&Personal=7")
       .get() (err, res, body) ->
         msg.send JSON.parse(body).text
