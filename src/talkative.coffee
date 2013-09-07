@@ -66,13 +66,18 @@ module.exports = (robot) ->
       msg.send "OK, I will answer \"#{answer}\" when asked \"#{question}\""
 
   robot.respond /(forget)( all)? (answers|replies|everything)$/i, (msg) ->
-    for key, item of robot.brain.data.knowledge
-      i = 0
-      while i < robot.listeners.length
-        robot.listeners.splice(i,1) if String(item.regexp) in String(robot.listeners[i].regex)
-        i++
-    robot.brain.data.knowledge = {}
-    msg.send "OK, I've forgot all answers"
+    msg.send "Are you sure? (yes|no)"
+    msg.waitResponse (msg) ->
+      if msg.match[1] == 'yes'
+        for key, item of robot.brain.data.knowledge
+          i = 0
+          while i < robot.listeners.length
+            robot.listeners.splice(i,1) if String(item.regexp) in String(robot.listeners[i].regex)
+            i++
+        robot.brain.data.knowledge = {}
+        msg.send "OK, I've forgotten all answers"
+      else
+        msg.send "Whew... that was close."
 
   robot.respond /((say )?s(ome)?thing|talk( to me)?)( about (.*))?$/i, (msg) ->
     subject = msg.match[6]

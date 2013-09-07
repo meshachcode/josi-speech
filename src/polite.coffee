@@ -12,7 +12,6 @@
 # Author:
 #   dannymcc
 
-<<<<<<< HEAD
 greetings = [
   "Ahoy!",
   "Sup...",
@@ -25,8 +24,6 @@ greetings = [
   "yo"
 ]
 
-=======
->>>>>>> cdf890acd890da4fb3734c0285f4e10c397ab05f
 responses = [
   "You're welcome.",
   "No problem.",
@@ -58,7 +55,6 @@ youTalkinToMe = (msg, robot) ->
   input.indexOf(name) != -1
 
 module.exports = (robot) ->
-<<<<<<< HEAD
   robot.respond /\b(thanks|thank you|cheers|nice one)\b/i, (msg) ->
     msg.send msg.random responses if youTalkinToMe(msg, robot)
 
@@ -70,16 +66,3 @@ module.exports = (robot) ->
     
   robot.respond /\b(bye|night|goodbye|good night)\b/i, (msg) ->
     msg.send msg.random farewellResponses if youTalkinToMe(msg, robot)
-=======
-  robot.hear /\b(thanks|thank you|cheers|nice one)\b/i, (msg) ->
-    msg.reply msg.random responses if youTalkinToMe(msg, robot)
-
-  robot.hear /\b(ty|thx)\b/i, (msg) ->
-    msg.reply msg.random shortResponses if youTalkinToMe(msg, robot)
-
-  robot.hear /\b(hello|hi|sup|howdy|good (morning|evening|afternoon))\b/i, (msg) ->
-    msg.reply "#{robot.name} at your service!" if youTalkinToMe(msg, robot)
-    
-  robot.hear /\b(bye|night|goodbye|good night)\b/i, (msg) ->
-    msg.reply msg.random farewellResponses if youTalkinToMe(msg, robot)
->>>>>>> cdf890acd890da4fb3734c0285f4e10c397ab05f

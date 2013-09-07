@@ -13,7 +13,6 @@
 # Author:
 #   tombell
 
-<<<<<<< HEAD
 reactions = [
   "I would love nothing more.",
   "Psht... Get ready to wet your pants...",
@@ -29,11 +28,6 @@ module.exports = (robot) ->
 
   robot.respond /joke me/i, (msg) ->
     msg.send msg.random reactions
-=======
-module.exports = (robot) ->
-
-  robot.respond /joke me/i, (msg) ->
->>>>>>> cdf890acd890da4fb3734c0285f4e10c397ab05f
     msg.http('http://www.reddit.com/r/jokes.json')
       .get() (err, res, body) ->
         try

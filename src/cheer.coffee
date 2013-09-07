@@ -13,7 +13,6 @@
 # Author:
 #   carllerche
 
-<<<<<<< HEAD
 reactions = [
   "I would love nothing more.",
   "Awe... You should see this.",
@@ -25,8 +24,6 @@ reactions = [
   "You came to the right place."
 ]
 
-=======
->>>>>>> cdf890acd890da4fb3734c0285f4e10c397ab05f
 module.exports = (robot) ->
   robot.respond /cheer me up/i, (msg) ->
     aww msg
@@ -36,10 +33,7 @@ module.exports = (robot) ->
     aww msg
 
 aww = (msg) ->
-<<<<<<< HEAD
   msg.send msg.random reactions
-=======
->>>>>>> cdf890acd890da4fb3734c0285f4e10c397ab05f
   msg
     .http('http://imgur.com/r/aww.json')
       .get() (err, res, body) ->
