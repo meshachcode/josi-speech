@@ -13,6 +13,4 @@
 module.exports = (robot) ->
 
   robot.respond /persona/i, (msg) ->
-  	msg.send "JoSi Speech - Loaded"
-
-  robot.brain.josi_modules.push "josi-speech"
+    msg.send "JoSi Speech - Loaded"
