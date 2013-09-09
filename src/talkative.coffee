@@ -39,7 +39,11 @@ module.exports = (robot) ->
       return null
 
   robot.brain.on 'loaded', =>
+<<<<<<< HEAD
     robot.logger.info "Loading knowledge (josi-speech/talkative.coffee)"
+=======
+    robot.logger.info "Loading knowledge"
+>>>>>>> 59c4d44dc23bd5c55e9332f96677caa15877b54e
     robot.brain.data.knowledge ?= {}
 
     robot.brain.data.knowledge = basic_knowledge if Object.keys(robot.brain.data.knowledge).length == 0
