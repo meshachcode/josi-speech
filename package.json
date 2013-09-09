@@ -1,0 +1,37 @@
+{
+  "name": "josi-speech",
+  "description": "Natural language is a crucial part of the value and adoption of your JoSi by your team. Manage her standard responses, diction, and language here.",
+  "version": "0.0.3",
+  "author": {
+    "name": "Jolly Science"
+  },
+  "license": "MIT",
+  "keywords": [
+    "hubot",
+    "hubot-scripts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jollyscience/josi-speech.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jollyscience/josi-speech/issues"
+  },
+  "dependencies": {
+    "coffee-script": "~1.6"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "chai": "*",
+    "sinon-chai": "*",
+    "sinon": "*"
+  },
+  "main": "index.coffee",
+  "scripts": {
+    "test": "script/test"
+  },
+  "readme": "### josi-speech\n\n[coming soon]\n\n\tnpm install josi-speech\n\nNatural language is a crucial part of the value and adoption of your JoSi by your team. Manage her standard responses, diction, and language here.\n\n\t- josi-speech/\n\t\t- scripts/\n\t\t\t- announce.coffee\n\t\t\t- chat.coffee\n\t\t\t- cheer.coffee\n\t\t\t- conversation.coffee\n\t\t\t- error.coffee\n\t\t\t- polite.coffee\n\t\t\t- say.coffee\n\t\t\t- tell.coffee\n\t\t\t- translate.coffee",
+  "readmeFilename": "README.md",
+  "_id": "josi-speech@0.0.2",
+  "_from": "josi-speech@*"
+}
