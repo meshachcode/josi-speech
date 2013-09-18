@@ -34,9 +34,5 @@
   "readme": "### josi-speech\n\n[coming soon]\n\n\tnpm install josi-speech\n\nNatural language is a crucial part of the value and adoption of your JoSi by your team. Manage her standard responses, diction, and language here.\n\n\t- josi-speech/\n\t\t- scripts/\n\t\t\t- announce.coffee\n\t\t\t- chat.coffee\n\t\t\t- cheer.coffee\n\t\t\t- conversation.coffee\n\t\t\t- error.coffee\n\t\t\t- polite.coffee\n\t\t\t- say.coffee\n\t\t\t- tell.coffee\n\t\t\t- translate.coffee",
   "readmeFilename": "README.md",
   "_id": "josi-speech@0.0.3-a",
-  "_from": "josi-speech@0.0.3-a",
-  "dist": {
-    "shasum": "49f1008af62fedd8939e0744f4baf271b4a1dbc7"
-  },
-  "_resolved": "https://registry.npmjs.org/josi-speech/-/josi-speech-0.0.3.tgz"
+  "_from": "josi-speech@0.0.3-a"
 }
